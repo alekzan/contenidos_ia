@@ -1,6 +1,9 @@
-streamlit>=1.25.0
-typing-extensions>=4.5.0
-langgraph>=0.1.0
-langchain-core>=0.0.208
-python-dotenv
+langchain==0.2.6
+langchain-community==0.2.6
 langchain-core==0.2.10
+langchain-groq==0.1.5
+langgraph==0.1.1
+langsmith==0.1.77
+python-dotenv==1.0.1
+streamlit==1.37.0
+typing_extensions==4.10.0
