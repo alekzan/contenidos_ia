@@ -163,9 +163,7 @@ def main():
                     st.session_state.dict_ideas = new_dict_ideas
 
     # Display and select ideas if they exist in session_state
-    if "dict_ideas" in st.session_state and st.session_state.dict_ideas.get(
-        "content_ideas"
-    ):
+    if "dict_ideas" in st.session_state:
         st.title("Selecciona una Idea")
 
         # Create a list of options for the radio button
@@ -236,9 +234,7 @@ def main():
                     api_key=st.session_state.groq_api_key,
                 )
                 st.session_state.dict_ideas = new_dict_ideas
-                st.experimental_rerun()  # Rerun to update the UI with new ideas
-    else:
-        st.warning("No hay ideas disponibles. Por favor, genera ideas primero.")
+                st.rerun()  # Rerun to update the UI with new ideas
 
 
 if __name__ == "__main__":
