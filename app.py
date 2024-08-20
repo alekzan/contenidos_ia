@@ -120,7 +120,7 @@ def main():
 
         # Add Groq API key input field
         st.session_state.groq_api_key = st.text_input(
-            "Llave API de Groq",
+            "Llave API de Groq (Consíguela [aquí](https://console.groq.com/keys))",
             value=st.session_state.groq_api_key,
             placeholder="gsk_...",
         )
