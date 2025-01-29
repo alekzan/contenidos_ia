@@ -14,7 +14,7 @@ os.environ["LANGCHAIN_ENDPOINT"] = "https://api.smith.langchain.com"
 os.environ["LANGCHAIN_API_KEY"] = os.getenv("LANGCHAIN_API_KEY")
 os.environ["LANGCHAIN_PROJECT"] = "Asistente de Contenidos"
 
-llama3_1 = "llama-3.1-70b-versatile"
+llama3_1 = "llama-3.3-70b-versatile"
 
 
 class ContentIdea(BaseModel):
